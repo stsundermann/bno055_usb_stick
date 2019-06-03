@@ -62,7 +62,7 @@ public:
     imu.header = output.header;
     imu.orientation = output.quaternion;
     imu.angular_velocity = output.gyroscope;
-    imu.linear_acceleration = output.acceleration;
+    imu.linear_acceleration = output.linear_acceleration;
 
     // To indicate no covariance estimate, set the 1st elements of matrice -1
     imu.orientation_covariance[0] = -1;
